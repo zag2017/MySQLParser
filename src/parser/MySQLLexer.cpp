@@ -1,51 +1,51 @@
 
-// Generated from MySqlLexer.g4 by ANTLR 4.7
+// Generated from MySQLLexer.g4 by ANTLR 4.7
 
 
-#include "MySqlLexer.h"
+#include "MySQLLexer.h"
 
 
 using namespace antlr4;
 
 using namespace parser;
 
-MySqlLexer::MySqlLexer(CharStream *input) : Lexer(input) {
+MySQLLexer::MySQLLexer(CharStream *input) : Lexer(input) {
   _interpreter = new atn::LexerATNSimulator(this, _atn, _decisionToDFA, _sharedContextCache);
 }
 
-MySqlLexer::~MySqlLexer() {
+MySQLLexer::~MySQLLexer() {
   delete _interpreter;
 }
 
-std::string MySqlLexer::getGrammarFileName() const {
-  return "MySqlLexer.g4";
+std::string MySQLLexer::getGrammarFileName() const {
+  return "MySQLLexer.g4";
 }
 
-const std::vector<std::string>& MySqlLexer::getRuleNames() const {
+const std::vector<std::string>& MySQLLexer::getRuleNames() const {
   return _ruleNames;
 }
 
-const std::vector<std::string>& MySqlLexer::getChannelNames() const {
+const std::vector<std::string>& MySQLLexer::getChannelNames() const {
   return _channelNames;
 }
 
-const std::vector<std::string>& MySqlLexer::getModeNames() const {
+const std::vector<std::string>& MySQLLexer::getModeNames() const {
   return _modeNames;
 }
 
-const std::vector<std::string>& MySqlLexer::getTokenNames() const {
+const std::vector<std::string>& MySQLLexer::getTokenNames() const {
   return _tokenNames;
 }
 
-dfa::Vocabulary& MySqlLexer::getVocabulary() const {
+dfa::Vocabulary& MySQLLexer::getVocabulary() const {
   return _vocabulary;
 }
 
-const std::vector<uint16_t> MySqlLexer::getSerializedATN() const {
+const std::vector<uint16_t> MySQLLexer::getSerializedATN() const {
   return _serializedATN;
 }
 
-const atn::ATN& MySqlLexer::getATN() const {
+const atn::ATN& MySQLLexer::getATN() const {
   return _atn;
 }
 
@@ -53,14 +53,14 @@ const atn::ATN& MySqlLexer::getATN() const {
 
 
 // Static vars and initialization.
-std::vector<dfa::DFA> MySqlLexer::_decisionToDFA;
-atn::PredictionContextCache MySqlLexer::_sharedContextCache;
+std::vector<dfa::DFA> MySQLLexer::_decisionToDFA;
+atn::PredictionContextCache MySQLLexer::_sharedContextCache;
 
 // We own the ATN which in turn owns the ATN states.
-atn::ATN MySqlLexer::_atn;
-std::vector<uint16_t> MySqlLexer::_serializedATN;
+atn::ATN MySQLLexer::_atn;
+std::vector<uint16_t> MySQLLexer::_serializedATN;
 
-std::vector<std::string> MySqlLexer::_ruleNames = {
+std::vector<std::string> MySQLLexer::_ruleNames = {
   u8"SPACE", u8"SPEC_MYSQL_COMMENT", u8"COMMENT_INPUT", u8"LINE_COMMENT", 
   u8"ADD", u8"ALL", u8"ALTER", u8"ANALYZE", u8"AND", u8"AS", u8"ASC", u8"BEFORE", 
   u8"BETWEEN", u8"BOTH", u8"BY", u8"CALL", u8"CASCADE", u8"CASE", u8"CAST", 
@@ -249,15 +249,15 @@ std::vector<std::string> MySqlLexer::_ruleNames = {
   u8"HEX_DIGIT", u8"DEC_DIGIT", u8"BIT_STRING_L", u8"ERROR_RECONGNIGION"
 };
 
-std::vector<std::string> MySqlLexer::_channelNames = {
+std::vector<std::string> MySQLLexer::_channelNames = {
   "DEFAULT_TOKEN_CHANNEL", "HIDDEN", u8"MYSQLCOMMENT", u8"ERRORCHANNEL"
 };
 
-std::vector<std::string> MySqlLexer::_modeNames = {
+std::vector<std::string> MySQLLexer::_modeNames = {
   u8"DEFAULT_MODE"
 };
 
-std::vector<std::string> MySqlLexer::_literalNames = {
+std::vector<std::string> MySQLLexer::_literalNames = {
   "", "", "", "", "", u8"'ADD'", u8"'ALL'", u8"'ALTER'", u8"'ANALYZE'", 
   u8"'AND'", u8"'AS'", u8"'ASC'", u8"'BEFORE'", u8"'BETWEEN'", u8"'BOTH'", 
   u8"'BY'", u8"'CALL'", u8"'CASCADE'", u8"'CASE'", u8"'CAST'", u8"'CHANGE'", 
@@ -455,7 +455,7 @@ std::vector<std::string> MySqlLexer::_literalNames = {
   u8"'0'", u8"'1'", u8"'2'", u8"'''", u8"'\"'", u8"'`'", u8"':'"
 };
 
-std::vector<std::string> MySqlLexer::_symbolicNames = {
+std::vector<std::string> MySQLLexer::_symbolicNames = {
   "", u8"SPACE", u8"SPEC_MYSQL_COMMENT", u8"COMMENT_INPUT", u8"LINE_COMMENT", 
   u8"ADD", u8"ALL", u8"ALTER", u8"ANALYZE", u8"AND", u8"AS", u8"ASC", u8"BEFORE", 
   u8"BETWEEN", u8"BOTH", u8"BY", u8"CALL", u8"CASCADE", u8"CASE", u8"CAST", 
@@ -642,11 +642,11 @@ std::vector<std::string> MySqlLexer::_symbolicNames = {
   u8"LOCAL_ID", u8"GLOBAL_ID", u8"ERROR_RECONGNIGION"
 };
 
-dfa::Vocabulary MySqlLexer::_vocabulary(_literalNames, _symbolicNames);
+dfa::Vocabulary MySQLLexer::_vocabulary(_literalNames, _symbolicNames);
 
-std::vector<std::string> MySqlLexer::_tokenNames;
+std::vector<std::string> MySQLLexer::_tokenNames;
 
-MySqlLexer::Initializer::Initializer() {
+MySQLLexer::Initializer::Initializer() {
   // This code could be in a static initializer lambda, but VS doesn't allow access to private class members from there.
 	for (size_t i = 0; i < _symbolicNames.size(); ++i) {
 		std::string name = _vocabulary.getLiteralName(i);
@@ -8666,4 +8666,4 @@ MySqlLexer::Initializer::Initializer() {
   }
 }
 
-MySqlLexer::Initializer MySqlLexer::_init;
+MySQLLexer::Initializer MySQLLexer::_init;

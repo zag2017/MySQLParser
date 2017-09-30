@@ -1,5 +1,5 @@
 
-// Generated from MySqlParser.g4 by ANTLR 4.7
+// Generated from MySQLParser.g4 by ANTLR 4.7
 
 #pragma once
 
@@ -10,7 +10,7 @@
 namespace parser {
 
 
-class  MySqlParser : public antlr4::Parser {
+class  MySQLParser : public antlr4::Parser {
 public:
   enum {
     SPACE = 1, SPEC_MYSQL_COMMENT = 2, COMMENT_INPUT = 3, LINE_COMMENT = 4, 
@@ -325,8 +325,8 @@ public:
     RuleKeywords_can_be_id = 285, RuleFunction_name_base = 286
   };
 
-  MySqlParser(antlr4::TokenStream *input);
-  ~MySqlParser();
+  MySQLParser(antlr4::TokenStream *input);
+  ~MySQLParser();
 
   virtual std::string getGrammarFileName() const override;
   virtual const antlr4::atn::ATN& getATN() const override { return _atn; };
@@ -1018,9 +1018,9 @@ public:
   class  Create_logfile_groupContext : public antlr4::ParserRuleContext {
   public:
     antlr4::Token *undo_file = nullptr;;
-    MySqlParser::Filesize_literalContext *init_size = nullptr;;
-    MySqlParser::Filesize_literalContext *undo_size = nullptr;;
-    MySqlParser::Filesize_literalContext *redo_size = nullptr;;
+    MySQLParser::Filesize_literalContext *init_size = nullptr;;
+    MySQLParser::Filesize_literalContext *undo_size = nullptr;;
+    MySQLParser::Filesize_literalContext *redo_size = nullptr;;
     antlr4::Token *comment = nullptr;;
     Create_logfile_groupContext(antlr4::ParserRuleContext *parent, size_t invokingState);
     virtual size_t getRuleIndex() const override;
@@ -1203,7 +1203,7 @@ public:
   class  Create_tablespace_innodbContext : public antlr4::ParserRuleContext {
   public:
     antlr4::Token *datafile = nullptr;;
-    MySqlParser::Filesize_literalContext *fb_size = nullptr;;
+    MySQLParser::Filesize_literalContext *fb_size = nullptr;;
     Create_tablespace_innodbContext(antlr4::ParserRuleContext *parent, size_t invokingState);
     virtual size_t getRuleIndex() const override;
     antlr4::tree::TerminalNode *CREATE();
@@ -1229,10 +1229,10 @@ public:
   class  Create_tablespace_ndbContext : public antlr4::ParserRuleContext {
   public:
     antlr4::Token *datafile = nullptr;;
-    MySqlParser::Filesize_literalContext *extent_size = nullptr;;
-    MySqlParser::Filesize_literalContext *initial_size = nullptr;;
-    MySqlParser::Filesize_literalContext *autoextend_size = nullptr;;
-    MySqlParser::Filesize_literalContext *max_size = nullptr;;
+    MySQLParser::Filesize_literalContext *extent_size = nullptr;;
+    MySQLParser::Filesize_literalContext *initial_size = nullptr;;
+    MySQLParser::Filesize_literalContext *autoextend_size = nullptr;;
+    MySQLParser::Filesize_literalContext *max_size = nullptr;;
     antlr4::Token *comment = nullptr;;
     Create_tablespace_ndbContext(antlr4::ParserRuleContext *parent, size_t invokingState);
     virtual size_t getRuleIndex() const override;
@@ -1270,10 +1270,10 @@ public:
 
   class  Create_triggerContext : public antlr4::ParserRuleContext {
   public:
-    MySqlParser::Full_idContext *this_trigger = nullptr;;
+    MySQLParser::Full_idContext *this_trigger = nullptr;;
     antlr4::Token *trigger_time = nullptr;;
     antlr4::Token *trigger_event = nullptr;;
-    MySqlParser::Full_idContext *other_trigger = nullptr;;
+    MySQLParser::Full_idContext *other_trigger = nullptr;;
     Create_triggerContext(antlr4::ParserRuleContext *parent, size_t invokingState);
     virtual size_t getRuleIndex() const override;
     antlr4::tree::TerminalNode *CREATE();
@@ -1411,10 +1411,10 @@ public:
   public:
     IntervalScheduleContext(Schedule_expressionContext *ctx);
 
-    MySqlParser::Timestamp_valueContext *startts = nullptr;
-    MySqlParser::Interval_exprContext *interval_exprContext = nullptr;
+    MySQLParser::Timestamp_valueContext *startts = nullptr;
+    MySQLParser::Interval_exprContext *interval_exprContext = nullptr;
     std::vector<Interval_exprContext *> start_intervals;
-    MySqlParser::Timestamp_valueContext *endts = nullptr;
+    MySQLParser::Timestamp_valueContext *endts = nullptr;
     std::vector<Interval_exprContext *> end_intervals;
     antlr4::tree::TerminalNode *EVERY();
     Interval_typeContext *interval_type();
@@ -1913,7 +1913,7 @@ public:
   public:
     TblConstrPKContext(Table_constraintContext *ctx);
 
-    MySqlParser::Id_Context *constr_name = nullptr;
+    MySQLParser::Id_Context *constr_name = nullptr;
     antlr4::tree::TerminalNode *PRIMARY();
     antlr4::tree::TerminalNode *KEY();
     Index_colname_listContext *index_colname_list();
@@ -1932,8 +1932,8 @@ public:
   public:
     TblConstrUKContext(Table_constraintContext *ctx);
 
-    MySqlParser::Id_Context *constr_name = nullptr;
-    MySqlParser::Id_Context *index_name = nullptr;
+    MySQLParser::Id_Context *constr_name = nullptr;
+    MySQLParser::Id_Context *index_name = nullptr;
     antlr4::tree::TerminalNode *UNIQUE();
     Index_colname_listContext *index_colname_list();
     antlr4::tree::TerminalNode *CONSTRAINT();
@@ -1954,8 +1954,8 @@ public:
   public:
     TblConstrFKContext(Table_constraintContext *ctx);
 
-    MySqlParser::Id_Context *constr_name = nullptr;
-    MySqlParser::Id_Context *index_name = nullptr;
+    MySQLParser::Id_Context *constr_name = nullptr;
+    MySQLParser::Id_Context *index_name = nullptr;
     antlr4::tree::TerminalNode *FOREIGN();
     antlr4::tree::TerminalNode *KEY();
     Index_colname_listContext *index_colname_list();
@@ -2438,8 +2438,8 @@ public:
 
   class  Partition_optionsContext : public antlr4::ParserRuleContext {
   public:
-    MySqlParser::Decimal_literalContext *part_num = nullptr;;
-    MySqlParser::Decimal_literalContext *subpart_num = nullptr;;
+    MySQLParser::Decimal_literalContext *part_num = nullptr;;
+    MySQLParser::Decimal_literalContext *subpart_num = nullptr;;
     Partition_optionsContext(antlr4::ParserRuleContext *parent, size_t invokingState);
     virtual size_t getRuleIndex() const override;
     antlr4::tree::TerminalNode *PARTITION();
@@ -2509,10 +2509,10 @@ public:
     antlr4::Token *comment = nullptr;;
     antlr4::Token *data_dir = nullptr;;
     antlr4::Token *index_dir = nullptr;;
-    MySqlParser::Decimal_literalContext *max_row_num = nullptr;;
-    MySqlParser::Decimal_literalContext *min_row_num = nullptr;;
-    MySqlParser::Id_Context *tblspace_id = nullptr;;
-    MySqlParser::Id_Context *nodegroup_id = nullptr;;
+    MySQLParser::Decimal_literalContext *max_row_num = nullptr;;
+    MySQLParser::Decimal_literalContext *min_row_num = nullptr;;
+    MySQLParser::Id_Context *tblspace_id = nullptr;;
+    MySQLParser::Id_Context *nodegroup_id = nullptr;;
     Partition_defContext(antlr4::ParserRuleContext *parent, size_t invokingState);
     virtual size_t getRuleIndex() const override;
     antlr4::tree::TerminalNode *PARTITION();
@@ -2558,10 +2558,10 @@ public:
     antlr4::Token *comment = nullptr;;
     antlr4::Token *data_dir = nullptr;;
     antlr4::Token *index_dir = nullptr;;
-    MySqlParser::Decimal_literalContext *max_row_num = nullptr;;
-    MySqlParser::Decimal_literalContext *min_row_num = nullptr;;
-    MySqlParser::Id_Context *tblspace_id = nullptr;;
-    MySqlParser::Id_Context *nodegroup_id = nullptr;;
+    MySQLParser::Decimal_literalContext *max_row_num = nullptr;;
+    MySQLParser::Decimal_literalContext *min_row_num = nullptr;;
+    MySQLParser::Id_Context *tblspace_id = nullptr;;
+    MySQLParser::Id_Context *nodegroup_id = nullptr;;
     Subpartition_defContext(antlr4::ParserRuleContext *parent, size_t invokingState);
     virtual size_t getRuleIndex() const override;
     antlr4::tree::TerminalNode *SUBPARTITION();
@@ -3827,10 +3827,10 @@ public:
 
   class  Insert_statementContext : public antlr4::ParserRuleContext {
   public:
-    MySqlParser::Update_elemContext *set_firstelem = nullptr;;
-    MySqlParser::Update_elemContext *update_elemContext = nullptr;;
+    MySQLParser::Update_elemContext *set_firstelem = nullptr;;
+    MySQLParser::Update_elemContext *update_elemContext = nullptr;;
     std::vector<Update_elemContext *> set_elem;;
-    MySqlParser::Update_elemContext *duplicate_firstelem = nullptr;;
+    MySQLParser::Update_elemContext *duplicate_firstelem = nullptr;;
     std::vector<Update_elemContext *> duplicate_elem;;
     Insert_statementContext(antlr4::ParserRuleContext *parent, size_t invokingState);
     virtual size_t getRuleIndex() const override;
@@ -3867,7 +3867,7 @@ public:
     antlr4::Token *priority = nullptr;;
     antlr4::Token *filename = nullptr;;
     antlr4::Token *replaceignore = nullptr;;
-    MySqlParser::Charset_nameContext *charset = nullptr;;
+    MySQLParser::Charset_nameContext *charset = nullptr;;
     antlr4::Token *terminatefieldsymb = nullptr;;
     antlr4::Token *enclosedsymb = nullptr;;
     antlr4::Token *escapesymb = nullptr;;
@@ -3968,8 +3968,8 @@ public:
 
   class  Replace_statementContext : public antlr4::ParserRuleContext {
   public:
-    MySqlParser::Update_elemContext *set_firstelem = nullptr;;
-    MySqlParser::Update_elemContext *update_elemContext = nullptr;;
+    MySQLParser::Update_elemContext *set_firstelem = nullptr;;
+    MySQLParser::Update_elemContext *update_elemContext = nullptr;;
     std::vector<Update_elemContext *> set_elem;;
     Replace_statementContext(antlr4::ParserRuleContext *parent, size_t invokingState);
     virtual size_t getRuleIndex() const override;
@@ -4235,7 +4235,7 @@ public:
 
   class  Handler_read_index_statementContext : public antlr4::ParserRuleContext {
   public:
-    MySqlParser::Full_idContext *index = nullptr;;
+    MySQLParser::Full_idContext *index = nullptr;;
     antlr4::Token *move_order = nullptr;;
     Handler_read_index_statementContext(antlr4::ParserRuleContext *parent, size_t invokingState);
     virtual size_t getRuleIndex() const override;
@@ -4438,7 +4438,7 @@ public:
   public:
     SubqueryTableItemContext(Table_source_itemContext *ctx);
 
-    MySqlParser::Id_Context *alias = nullptr;
+    MySQLParser::Id_Context *alias = nullptr;
     Id_Context *id_();
     SubqueryContext *subquery();
     antlr4::tree::TerminalNode *AS();
@@ -4452,7 +4452,7 @@ public:
   public:
     AtomTableItemContext(Table_source_itemContext *ctx);
 
-    MySqlParser::Id_Context *alias = nullptr;
+    MySQLParser::Id_Context *alias = nullptr;
     Table_nameContext *table_name();
     antlr4::tree::TerminalNode *PARTITION();
     Id_listContext *id_list();
@@ -4839,7 +4839,7 @@ public:
     SelectIntoOutfileContext(Select_into_expressionContext *ctx);
 
     antlr4::Token *filename = nullptr;
-    MySqlParser::Charset_nameContext *charset = nullptr;
+    MySQLParser::Charset_nameContext *charset = nullptr;
     antlr4::Token *terminatefieldsymb = nullptr;
     antlr4::Token *enclosedsymb = nullptr;
     antlr4::Token *escapesymb = nullptr;
@@ -7288,9 +7288,9 @@ public:
   public:
     ShowLogeventsContext(Show_statementContext *ctx);
 
-    MySqlParser::Decimal_literalContext *from_pos = nullptr;
-    MySqlParser::Decimal_literalContext *offset = nullptr;
-    MySqlParser::Decimal_literalContext *row_count = nullptr;
+    MySQLParser::Decimal_literalContext *from_pos = nullptr;
+    MySQLParser::Decimal_literalContext *offset = nullptr;
+    MySQLParser::Decimal_literalContext *row_count = nullptr;
     antlr4::tree::TerminalNode *SHOW();
     antlr4::tree::TerminalNode *EVENTS();
     antlr4::tree::TerminalNode *BINLOG();
@@ -7385,8 +7385,8 @@ public:
   public:
     ShowProfileContext(Show_statementContext *ctx);
 
-    MySqlParser::Decimal_literalContext *offset = nullptr;
-    MySqlParser::Decimal_literalContext *row_count = nullptr;
+    MySQLParser::Decimal_literalContext *offset = nullptr;
+    MySQLParser::Decimal_literalContext *row_count = nullptr;
     antlr4::tree::TerminalNode *SHOW();
     antlr4::tree::TerminalNode *PROFILE();
     std::vector<Show_profile_typeContext *> show_profile_type();
@@ -7427,8 +7427,8 @@ public:
   public:
     ShowErrWarnContext(Show_statementContext *ctx);
 
-    MySqlParser::Decimal_literalContext *offset = nullptr;
-    MySqlParser::Decimal_literalContext *row_count = nullptr;
+    MySQLParser::Decimal_literalContext *offset = nullptr;
+    MySQLParser::Decimal_literalContext *row_count = nullptr;
     antlr4::tree::TerminalNode *SHOW();
     antlr4::tree::TerminalNode *ERRORS();
     antlr4::tree::TerminalNode *WARNINGS();
@@ -7692,8 +7692,8 @@ public:
 
   class  Load_tbl_index_listContext : public antlr4::ParserRuleContext {
   public:
-    MySqlParser::Id_listContext *partition_list = nullptr;;
-    MySqlParser::Id_listContext *index_list = nullptr;;
+    MySQLParser::Id_listContext *partition_list = nullptr;;
+    MySQLParser::Id_listContext *index_list = nullptr;;
     Load_tbl_index_listContext(antlr4::ParserRuleContext *parent, size_t invokingState);
     virtual size_t getRuleIndex() const override;
     Table_nameContext *table_name();
@@ -7717,7 +7717,7 @@ public:
 
   class  Simple_describe_statementContext : public antlr4::ParserRuleContext {
   public:
-    MySqlParser::Id_Context *colname = nullptr;;
+    MySQLParser::Id_Context *colname = nullptr;;
     antlr4::Token *col_wildcard = nullptr;;
     Simple_describe_statementContext(antlr4::ParserRuleContext *parent, size_t invokingState);
     virtual size_t getRuleIndex() const override;
@@ -8012,9 +8012,9 @@ public:
 
   class  XidContext : public antlr4::ParserRuleContext {
   public:
-    MySqlParser::Xid_string_idContext *xid_gtrid = nullptr;;
-    MySqlParser::Xid_string_idContext *xid_bqual = nullptr;;
-    MySqlParser::Decimal_literalContext *xid_formatID = nullptr;;
+    MySQLParser::Xid_string_idContext *xid_gtrid = nullptr;;
+    MySQLParser::Xid_string_idContext *xid_bqual = nullptr;;
+    MySQLParser::Decimal_literalContext *xid_formatID = nullptr;;
     XidContext(antlr4::ParserRuleContext *parent, size_t invokingState);
     virtual size_t getRuleIndex() const override;
     std::vector<Xid_string_idContext *> xid_string_id();
@@ -8729,8 +8729,8 @@ public:
   public:
     ExtractFCallContext(Specific_function_callContext *ctx);
 
-    MySqlParser::String_literalContext *fstr = nullptr;
-    MySqlParser::ExpressionContext *fexpr = nullptr;
+    MySQLParser::String_literalContext *fstr = nullptr;
+    MySQLParser::ExpressionContext *fexpr = nullptr;
     antlr4::tree::TerminalNode *EXTRACT();
     Interval_typeContext *interval_type();
     antlr4::tree::TerminalNode *FROM();
@@ -8746,10 +8746,10 @@ public:
   public:
     TrimFCallContext(Specific_function_callContext *ctx);
 
-    MySqlParser::String_literalContext *fstr = nullptr;
-    MySqlParser::ExpressionContext *fexpr = nullptr;
-    MySqlParser::String_literalContext *sstr = nullptr;
-    MySqlParser::ExpressionContext *sexpr = nullptr;
+    MySQLParser::String_literalContext *fstr = nullptr;
+    MySQLParser::ExpressionContext *fexpr = nullptr;
+    MySQLParser::String_literalContext *sstr = nullptr;
+    MySQLParser::ExpressionContext *sexpr = nullptr;
     antlr4::tree::TerminalNode *TRIM();
     antlr4::tree::TerminalNode *FROM();
     antlr4::tree::TerminalNode *BOTH();
@@ -8834,7 +8834,7 @@ public:
   public:
     CaseFCallContext(Specific_function_callContext *ctx);
 
-    MySqlParser::Function_argContext *function_argContext = nullptr;
+    MySQLParser::Function_argContext *function_argContext = nullptr;
     std::vector<Function_argContext *> condarg;
     std::vector<Function_argContext *> resarg;
     antlr4::tree::TerminalNode *CASE();
@@ -8857,10 +8857,10 @@ public:
   public:
     PositionFCallContext(Specific_function_callContext *ctx);
 
-    MySqlParser::String_literalContext *fstr = nullptr;
-    MySqlParser::ExpressionContext *fexpr = nullptr;
-    MySqlParser::String_literalContext *sstr = nullptr;
-    MySqlParser::ExpressionContext *sexpr = nullptr;
+    MySQLParser::String_literalContext *fstr = nullptr;
+    MySQLParser::ExpressionContext *fexpr = nullptr;
+    MySQLParser::String_literalContext *sstr = nullptr;
+    MySQLParser::ExpressionContext *sexpr = nullptr;
     antlr4::tree::TerminalNode *POSITION();
     antlr4::tree::TerminalNode *IN();
     std::vector<String_literalContext *> string_literal();
@@ -8891,11 +8891,11 @@ public:
   public:
     SubstrFCallContext(Specific_function_callContext *ctx);
 
-    MySqlParser::ExpressionContext *fexpr = nullptr;
-    MySqlParser::Decimal_literalContext *fdecimal = nullptr;
-    MySqlParser::ExpressionContext *sexpr = nullptr;
-    MySqlParser::Decimal_literalContext *sdecimal = nullptr;
-    MySqlParser::ExpressionContext *texpr = nullptr;
+    MySQLParser::ExpressionContext *fexpr = nullptr;
+    MySQLParser::Decimal_literalContext *fdecimal = nullptr;
+    MySQLParser::ExpressionContext *sexpr = nullptr;
+    MySQLParser::Decimal_literalContext *sdecimal = nullptr;
+    MySQLParser::ExpressionContext *texpr = nullptr;
     antlr4::tree::TerminalNode *FROM();
     antlr4::tree::TerminalNode *SUBSTR();
     antlr4::tree::TerminalNode *SUBSTRING();
@@ -8930,8 +8930,8 @@ public:
   public:
     LevelWeightFRangeContext(Levels_in_weight_stringContext *ctx);
 
-    MySqlParser::Decimal_literalContext *firstlevel = nullptr;
-    MySqlParser::Decimal_literalContext *lastlevel = nullptr;
+    MySQLParser::Decimal_literalContext *firstlevel = nullptr;
+    MySQLParser::Decimal_literalContext *lastlevel = nullptr;
     antlr4::tree::TerminalNode *LEVEL();
     std::vector<Decimal_literalContext *> decimal_literal();
     Decimal_literalContext* decimal_literal(size_t i);
@@ -8945,9 +8945,9 @@ public:
   public:
     LevelWeightFListContext(Levels_in_weight_stringContext *ctx);
 
-    MySqlParser::Decimal_literalContext *firstlevel = nullptr;
+    MySQLParser::Decimal_literalContext *firstlevel = nullptr;
     antlr4::Token *firstord = nullptr;
-    MySqlParser::Decimal_literalContext *decimal_literalContext = nullptr;
+    MySQLParser::Decimal_literalContext *decimal_literalContext = nullptr;
     std::vector<Decimal_literalContext *> nextlevel;
     antlr4::Token *ascToken = nullptr;
     std::vector<antlr4::Token *> nextord;

@@ -1,5 +1,5 @@
 
-// Generated from MySqlLexer.g4 by ANTLR 4.7
+// Generated from MySQLLexer.g4 by ANTLR 4.7
 
 #pragma once
 
@@ -10,7 +10,7 @@
 namespace parser {
 
 
-class  MySqlLexer : public antlr4::Lexer {
+class  MySQLLexer : public antlr4::Lexer {
 public:
   enum {
     SPACE = 1, SPEC_MYSQL_COMMENT = 2, COMMENT_INPUT = 3, LINE_COMMENT = 4, 
@@ -230,8 +230,8 @@ public:
     MYSQLCOMMENT = 2, ERRORCHANNEL = 3
   };
 
-  MySqlLexer(antlr4::CharStream *input);
-  ~MySqlLexer();
+  MySQLLexer(antlr4::CharStream *input);
+  ~MySQLLexer();
 
   virtual std::string getGrammarFileName() const override;
   virtual const std::vector<std::string>& getRuleNames() const override;
